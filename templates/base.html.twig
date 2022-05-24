@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/zephyr/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        {% block stylesheets %}{% endblock %}
+
+        {% block javascripts %}{% endblock %}
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Service-public</a>
+                
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                        <a class="nav-link active" href="/">Accueil
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/recensement">Recensement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+         {% block body %}{% endblock %}
+        </div>
+        <div class="footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <a href="#">lorem ipsum<br></a>
+                                <a href="#">lorem ipsum<br></a>
+                                <a href="#">lorem ipsum<br></a>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>À propos</h3>
+                            <ul>
+                                <a href="#">lorem ipsum<br></a>
+                                <a href="#">lorem ipsum<br></a>
+                                <a href="#">lorem ipsum<br></a>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Aide</h3>
+                            <ul>
+                                <a href="#">lorem ipsum<br></a>
+                                <a href="#">lorem ipsum<br></a>
+                                <a href="#">lorem ipsum<br></a>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                            <p class="copyright">Tous droits réservés © 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    </body>
+    
+</html>
